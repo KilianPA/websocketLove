@@ -20,7 +20,7 @@
                 this.message = (params.get("msg"));
                 this.sender = (params.get("sender"));
 
-                this.connection = new WebSocket("ws://websocket-love.herokuapp.com")
+                this.connection = new WebSocket("wss://websocket-love.herokuapp.com")
 
                 this.connection.onopen = () => {
                     this.connection.send(this.message + ';' + this.sender);
